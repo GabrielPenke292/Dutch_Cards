@@ -9,6 +9,6 @@ class Home extends BaseController
 		$data = [
 			'title'=> 'Dutch Cards - Memorize Dutch Words!'
 		];
-		return view('layout', $data);
+		return view('cards', $data);
 	}
 }
