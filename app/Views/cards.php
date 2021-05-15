@@ -1,5 +1,9 @@
 
-<?= $this->extend('layout/layout') ?>
+<?= $this->extend('layouts/layout') ?>
 <?= $this->section('content') ?>
-    [AQUI FICA O CONTEÚDO]
+    <section id="cards">
+        <div class="container">
+            <div class="card">[AQUI FICA O CARD]</div>
+        </div>
+    </section>
 <?= $this->endSection()?>
