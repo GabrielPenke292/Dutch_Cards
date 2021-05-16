@@ -27,9 +27,11 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
-                <h3 class="w-100 text-right">LOGOTIPO</h3>
+                <div class="col-md-12 ">
+                    <h3 class="">LOGOTIPO</h3>
+                </div>
             </div><!-- row text right -->
         </div><!-- container -->
         
@@ -38,7 +40,7 @@
     <?= $this->renderSection('content')?>
     
     <footer>
-        <div class="container">
+        <div class="container text-center">
             <p>COPYRIGHT</p>
         </div>
         
