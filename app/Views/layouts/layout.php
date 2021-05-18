@@ -24,10 +24,14 @@
 
     <!--  sweet alert 2  -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <style>
+        .sidebar{height: 100vh;}
+    </style>
 </head>
 <body>
     <header>
-        <div class="container text-center">
+        <div class="container w50 text-center">
             <div class="row">
                 <div class="col-md-12 ">
                     <h3 class="">LOGOTIPO</h3>
@@ -37,7 +41,18 @@
         
     </header>
 
-    <?= $this->renderSection('content')?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 bg-primary sidebar">
+                [SIDEBAR]
+            </div>
+            <div class="col-md-8">
+                <?= $this->renderSection('content')?>        
+            </div>
+        </div>
+    </div>
+
+    
     
     <footer>
         <div class="container text-center">
