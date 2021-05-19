@@ -43,10 +43,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 bg-primary sidebar">
+            <div class="col-md-3 bg-primary sidebar">
                 [SIDEBAR]
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 mt-5">
                 <?= $this->renderSection('content')?>        
             </div>
         </div>
@@ -56,6 +56,7 @@
     
     <footer>
         <div class="container text-center">
+            <hr>
             <p>COPYRIGHT</p>
         </div>
         

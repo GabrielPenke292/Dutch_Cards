@@ -2,6 +2,10 @@
     /* background-color: #f36c21; */
 }
 
+#cardWord{
+    cursor: pointer;
+}
+
 footer{
     padding-top: 45px;
 }
