@@ -4,7 +4,35 @@
 
 #cardWord{
     cursor: pointer;
+    transform-style: preserve-3d;
+    position: relative;
 }
+.card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    transition: transform 1.4s ease-in-out;
+}
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+    transition-delay: .6s;
+}
+/* #dutchWord{
+    transition: transform 1.4s ease-in-out;
+    
+}
+#englishWord{
+    opacity: 0;
+    transition-delay: 5s;
+    transition: opacity 2s ease-in-out;
+    
+} */
 
 footer{
     padding-top: 45px;
