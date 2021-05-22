@@ -17,5 +17,21 @@ function turnSide(){
 
 function nextWord(words){
     console.log("função next word");
-    console.log(words);
+    // console.log(words);
+
+    $.ajax({
+        type: "GET",
+        url: "getAllWords",
+        // data: "data",
+        dataType: "json",
+        success: function (response) {
+            console.log(response);
+            // console.log(response.length);
+            let randomWord = response[Math.floor(Math.random() * response.length)];
+            console.log(randomWord);
+            $("#dutchWord").html(randomWord['word_dutch']);
+            $("#englishWord").html(randomWord['word_english']);
+        }
+
+    });
 }

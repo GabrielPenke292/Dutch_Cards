@@ -11,8 +11,15 @@ class Home extends BaseController
 
 		$data = [
 			'title'	=> 'Dutch Cards - Memorize Dutch Words!',
-			'words'	=>	$wordsModel->findAll()
 		];
 		return view('cards', $data);
+	}
+
+	public function getAllWords(){
+		$wordsModel = new WordsModel();
+
+		$data = $wordsModel->findAll();
+
+		echo json_encode($data);
 	}
 }
