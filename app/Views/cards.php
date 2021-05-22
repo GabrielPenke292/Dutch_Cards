@@ -9,13 +9,19 @@
                 <div class="card " id='cardWord' style="width: 18rem;" onclick='turnSide()'>
                     <div class="card-front my-auto active">
                         <h2 id='dutchWord' class='text-white'><?= $words[0]['word_dutch']?></h2>
-                    </div>
+                    </div><!-- Front -->
                     <div class="card-back my-auto">
                         <h2 id='englishWord' class='text-white'><?= $words[0]['word_english']?></h2>
-                    </div>
-                </div>
+                    </div><!-- Back -->
+                </div><!-- Card -->
+                <?php 
+                    $num = count($words);
+                    $nextWord = $words[rand(0, $num-1)];
+                    $nextWordEnglish = $nextWord['word_english'];
+                    $nextWordDutch = $nextWord['word_dutch'];
+                ?>
+                <button type="button" class="btn btn-primary" onclick="nextWord('<?= $nextWordEnglish?>, <?= $nextWordDutch?>')">Next</button>
             </div>
-            
         </div>
     </section>
 <?= $this->endSection()?>

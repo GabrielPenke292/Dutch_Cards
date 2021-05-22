@@ -12,7 +12,10 @@ function turnSide(){
         $(".card-back").css({'transform': "rotateY(180deg)"});
         // $(".card-back").css({'transition-delay': "0"});
         // $(".card-back").css({'opacity': "0"});
-
     }
-    
+}
+
+function nextWord(words){
+    console.log("função next word");
+    console.log(words);
 }
