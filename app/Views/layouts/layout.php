@@ -41,16 +41,23 @@
         
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 bg-primary sidebar">
-                [SIDEBAR]
-            </div>
-            <div class="col-md-8 mt-5">
-                <?= $this->renderSection('content')?>        
+    <section id="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 bg-primary">
+                    [SIDEBAR]
+                    <div class="avatar">
+                        <img src="<?= base_url() ?>/assets/img/avatar1.png" alt="user-avatar">
+                        <h3>Fulano de Tal</h3>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-5">
+                    <?= $this->renderSection('content')?>        
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
 
     
     

@@ -1,6 +1,28 @@
 *{
     /* background-color: #f36c21; */
 }
+section#sidebar{
+    margin: 0 auto;
+    /* width: 50%; */
+    /* background-color: chartreuse; */
+}
+div.avatar{
+    width: 96%;
+    height: 200px;
+    background-color: blueviolet;
+    margin-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+div.avatar h3{
+    color: white;
+    font-size: 20px;
+}
 
 #cardWord{
     cursor: pointer;
