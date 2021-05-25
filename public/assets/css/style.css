@@ -24,6 +24,15 @@ div.avatar h3{
     font-size: 20px;
 }
 
+div.numbers{
+    width: 96%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: turquoise;
+    text-align: center;
+    top: 50%;
+}
+
 #cardWord{
     cursor: pointer;
     transform-style: preserve-3d;

@@ -49,14 +49,20 @@
                     <div class="avatar">
                         <img src="<?= base_url() ?>/assets/img/avatar1.png" alt="user-avatar">
                         <h3>Fulano de Tal</h3>
-                    </div>
+                    </div><!-- avatar -->
+
+                    <div class="numbers">
+                        [AQUI FICAM OS NÚMEROS]
+
+                    </div><!-- numbers -->
+
                 </div>
                 <div class="col-md-8 mt-5">
                     <?= $this->renderSection('content')?>        
                 </div>
-            </div>
-        </div>
-    </section>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section><!-- sidebar -->
     
 
     
