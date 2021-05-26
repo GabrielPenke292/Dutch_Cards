@@ -26,11 +26,19 @@ function nextWord(){
                 randomWord = response[Math.floor(Math.random() * response.length)];
             }while(randomWord['word_dutch'] == $("#dutchWord").html() );
 
-            // console.log(randomWord);
+            storeWords('store');
+
             $("#dutchWord").html(randomWord['word_dutch']);
             $("#englishWord").html(randomWord['word_english']);
-            
         }
-
     });
+}
+
+function storeWords(type){
+    let lastWords = [];
+    if(type == 'store'){
+        lastwords['dutch'] =  $("#dutchWord").html();
+        lastWords['english'] = $("#englishWord").html();
+    }
+    alert(lastWords['english'])
 }

@@ -41,7 +41,7 @@
         
     </header>
 
-    <section id="sidebar">
+    <section id="sidebar" class='float-left'>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 bg-primary">
@@ -64,7 +64,7 @@
         </div><!-- container -->
     </section><!-- sidebar -->
     
-
+    
     
     
     <footer>
