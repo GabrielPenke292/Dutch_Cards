@@ -3,6 +3,12 @@
 <?= $this->section('content') ?>
 <div class="container">
         <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4 addCardsButton text-center">
+                <a class="btn btn-primary" href="<?= base_url()?>/addcards">Add new cards</a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-1"></div>
             <section id="sidebar" class="col-md-4 d-flex justify-content-between">
                 <div class="col-md-2"></div>

@@ -23,4 +23,8 @@ class Home extends BaseController
 
 		echo json_encode($data);
 	}
+
+	public function addCards(){
+		return view('addCards');
+	}
 }

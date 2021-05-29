@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('getAllWords', "Home::getAllWords");
+$routes->get('addcards', "Home::addCards");
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
