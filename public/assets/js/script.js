@@ -56,9 +56,25 @@ function saveNewCard(){
         },
         dataType: "json",
         success: function (response) {
-            alert("Deu Bom")
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your new card is saved with success',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            $("#dutchWord").val("");
+            $("#englishWord").val("");
         }
     }).fail( function(response){
-        alert("ixxxiii")
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Something went wrong!',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        $("#dutchWord").val("");
+        $("#englishWord").val("");
     });
 }
