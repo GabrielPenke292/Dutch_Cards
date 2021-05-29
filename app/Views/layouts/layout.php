@@ -34,7 +34,7 @@
         <div class="container w50 text-center">
             <div class="row">
                 <div class="col-md-8 logo">
-                    <h3 class="">LOGOTIPO</h3>
+                    <h3 class=""><a href="<?= base_url()?>" >LOGOTIPO</a></h3>
                 </div>
                 <div class="col-md-4 pt-2">
                     <a href="#" class="text-white">Logout</a>

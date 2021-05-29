@@ -32,9 +32,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('getAllWords', "Home::getAllWords");
-$routes->get('addcards', "Home::addCards");
+$routes->get('/', 'Home::index');	// Página principal
+$routes->get('getAllWords', "Home::getAllWords");	// Pega todas as palavras cadastradas no banco de dados
+$routes->get('addcards', "Home::addCards");  // Cadastra novas palavras no banco
 
 /*
  * --------------------------------------------------------------------

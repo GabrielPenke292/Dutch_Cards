@@ -25,6 +25,11 @@ class Home extends BaseController
 	}
 
 	public function addCards(){
-		return view('addCards');
+
+		$data = [
+			'title'			=> 'Dutch Cards - Memorize Dutch Words!',
+		];
+
+		return view('addCards', $data);
 	}
 }
