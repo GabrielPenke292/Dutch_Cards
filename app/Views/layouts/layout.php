@@ -30,39 +30,21 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="p-2 mb-5">
         <div class="container w50 text-center">
             <div class="row">
-                <div class="col-md-12 ">
+                <div class="col-md-8 logo">
                     <h3 class="">LOGOTIPO</h3>
+                </div>
+                <div class="col-md-4 pt-2">
+                    <a href="#" class="text-white">Logout</a>
                 </div>
             </div><!-- row text right -->
         </div><!-- container -->
         
     </header>
 
-    <section id="sidebar" class='float-left'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 bg-primary">
-                    [SIDEBAR]
-                    <div class="avatar">
-                        <img src="<?= base_url() ?>/assets/img/avatar1.png" alt="user-avatar">
-                        <h3>Fulano de Tal</h3>
-                    </div><!-- avatar -->
-
-                    <div class="numbers">
-                        [AQUI FICAM OS NÚMEROS]
-
-                    </div><!-- numbers -->
-
-                </div>
-                <div class="col-md-8 mt-5">
-                    <?= $this->renderSection('content')?>        
-                </div>
-            </div><!-- row -->
-        </div><!-- container -->
-    </section><!-- sidebar -->
+    <?= $this->renderSection('content')?>   
     
     
     

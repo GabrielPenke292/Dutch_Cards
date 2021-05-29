@@ -1,9 +1,15 @@
 *{
     /* background-color: #f36c21; */
 }
+header{
+    background: #C4C4C4;
+}
+
+
 section#sidebar{
     margin: 0 auto;
-    /* width: 50%; */
+    /* float: left; */
+    /* display: inline-block; */
     /* background-color: chartreuse; */
 }
 div.avatar{
@@ -30,7 +36,9 @@ div.numbers{
     margin: 20px auto;
     background-color: turquoise;
     text-align: center;
-    top: 50%;
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 25%;
 }
 
 #cardWord{
