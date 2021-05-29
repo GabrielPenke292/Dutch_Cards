@@ -42,3 +42,23 @@ function storeWords(type){
     }
     alert(lastWords['english'])
 }
+
+function saveNewCard(){
+    event.preventDefault()
+    let dutchWord = $("#dutchWord").val();
+    let englishWord = $("#englishWord").val();
+    $.ajax({
+        type: "post",
+        url: "saveNewCard",
+        data: {
+            dutchWord,
+            englishWord
+        },
+        dataType: "json",
+        success: function (response) {
+            alert("Deu Bom")
+        }
+    }).fail( function(response){
+        alert("ixxxiii")
+    });
+}

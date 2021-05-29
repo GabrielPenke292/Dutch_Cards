@@ -19,7 +19,7 @@
 
         </section><!-- sidebar -->
         <div class="col-md-4">
-            <form class="border border-primary p-5">
+            <form class="border border-primary rounded-2 p-5">
                 <div class="mb-3">
                     <label for="dutchWord" class="form-label">Dutch Word</label>
                     <input type="text" class="form-control" id="dutchWord" placeholder="Type a new dutch word">

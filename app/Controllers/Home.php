@@ -32,4 +32,19 @@ class Home extends BaseController
 
 		return view('addCards', $data);
 	}
+
+	public function saveNewCard(){
+		$wordsModel = new WordsModel();
+
+		$dutchWord = $this->request->getPost('dutchWord');
+		$englishWord = $this->request->getPost('englishWord');
+		$data = [
+			'word_dutch' 	=> $dutchWord,
+			'word_english' 	=> $englishWord
+		];
+		$response = $wordsModel->save($data);
+
+		echo json_encode($response);
+
+	}
 }

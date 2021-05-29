@@ -34,7 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');	// Página principal
 $routes->get('getAllWords', "Home::getAllWords");	// Pega todas as palavras cadastradas no banco de dados
-$routes->get('addcards', "Home::addCards");  // Cadastra novas palavras no banco
+$routes->get('addcards', "Home::addCards");  // Retorna a view para cadastrar novas palavras no banco
+$routes->post('saveNewCard', "Home::saveNewCard");  // Salva o novo card no banco 
 
 /*
  * --------------------------------------------------------------------
