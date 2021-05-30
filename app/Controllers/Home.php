@@ -7,13 +7,19 @@ class Home extends BaseController
 {
 	public function index()
 	{	
-		$wordsModel = new WordsModel();
 
-		$data = [
-			'title'			=> 'Dutch Cards - Memorize Dutch Words!',
-			'totalWords'	=> $wordsModel->findAll()
-		];
-		return view('cards', $data);
+		if(isset($logged)){
+			$wordsModel = new WordsModel();
+
+			$data = [
+				'title'			=> 'Dutch Cards - Memorize Dutch Words!',
+				'totalWords'	=> $wordsModel->findAll()
+			];
+			return view('cards', $data);
+		}
+		$data = ['title' => 'Dutch Cards - Memorize Dutch Words!'];
+		return view("authentication/login", $data);
+		
 	}
 
 	public function getAllWords(){
