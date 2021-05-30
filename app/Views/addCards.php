@@ -12,7 +12,7 @@
                 </div><!-- avatar -->
                 
                 <div class="numbers">
-                    1/5
+                    1/<span id="total"><?= count($totalWords) ?></span>
                 </div><!-- numbers -->
             </div>
             <div class="col-md-2"></div>

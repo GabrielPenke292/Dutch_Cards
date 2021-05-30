@@ -25,9 +25,11 @@ class Home extends BaseController
 	}
 
 	public function addCards(){
+		$wordsModel = new WordsModel();
 
 		$data = [
 			'title'			=> 'Dutch Cards - Memorize Dutch Words!',
+			'totalWords'	=> $wordsModel->findAll()
 		];
 
 		return view('addCards', $data);
@@ -40,9 +42,10 @@ class Home extends BaseController
 		$englishWord = $this->request->getPost('englishWord');
 		$data = [
 			'word_dutch' 	=> $dutchWord,
-			'word_english' 	=> $englishWord
+			'word_english' 	=> $englishWord,
 		];
-		$response = $wordsModel->save($data);
+		$response['bool'] = $wordsModel->save($data);
+		$response['totalWords'] = $wordsModel->findAll();
 
 		echo json_encode($response);
 

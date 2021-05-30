@@ -1,6 +1,3 @@
-$(document).ready(function () {
-    console.log("okok");
-});
 
 function turnSide(){
     if($('.card-front').hasClass('active')){
@@ -56,6 +53,7 @@ function saveNewCard(){
         },
         dataType: "json",
         success: function (response) {
+            console.log(response);
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
@@ -65,6 +63,7 @@ function saveNewCard(){
             })
             $("#dutchWord").val("");
             $("#englishWord").val("");
+            $("#total").html(response['totalWords'].length);
         }
     }).fail( function(response){
         Swal.fire({
