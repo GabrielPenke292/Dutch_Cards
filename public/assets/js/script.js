@@ -32,12 +32,21 @@ function nextWord(){
 }
 
 function storeWords(type){
-    let lastWords = [];
     if(type == 'store'){
-        lastwords['dutch'] =  $("#dutchWord").html();
-        lastWords['english'] = $("#englishWord").html();
+        console.log("store")
+        $("#last_dutch").html($("#dutchWord").html());
+        $("#last_english").html($("#englishWord").html());
+    }else if(type == 'getLastWord'){
+        console.log("I was here")
+        $("#dutchWord").html($("#last_dutch").html());
+        $("#englishWord").html($("#last_english").html());
     }
-    alert(lastWords['english'])
+}
+
+function previousWord(){
+    let word = storeWords('getLastWord');
+
+    console.log(word);
 }
 
 function saveNewCard(){

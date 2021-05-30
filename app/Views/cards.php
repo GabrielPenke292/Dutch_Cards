@@ -44,11 +44,13 @@
                     <div class="row w-50 mt-2 mx-auto text-center">
                         <div class="col"></div>
                         <div class="col-md-8 text-center">
-                            <button type="button" class="btn btn-primary px-2">Previous</button>
+                            <button type="button" class="btn btn-primary px-2" onclick="previousWord()">Previous</button>
                             <button type="button" class="btn btn-primary px-2" onclick="nextWord()">Next</button>    
                         </div>
                         <div class="col-md-2"></div>
                     </div>        
+                    <div class="d-none" id="last_dutch" value=""></div>
+                    <div class="d-none" id="last_english" value=""></div>
             </section>    
         </div>
     </div><!-- container -->
