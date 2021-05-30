@@ -37,6 +37,9 @@ $routes->get('getAllWords', "Home::getAllWords");	// Pega todas as palavras cada
 $routes->get('addcards', "Home::addCards");  // Retorna a view para cadastrar novas palavras no banco
 $routes->post('saveNewCard', "Home::saveNewCard");  // Salva o novo card no banco 
 
+$routes->get("check", "Home::checkLogin");
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

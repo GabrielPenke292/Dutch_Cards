@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Models\WordsModel;
 class Home extends BaseController
 {
-	public function index()
+	public function index($logged = false)
 	{	
 
-		if(isset($logged)){
+		if($logged){
 			$wordsModel = new WordsModel();
 
 			$data = [
@@ -54,6 +54,10 @@ class Home extends BaseController
 		$response['totalWords'] = $wordsModel->findAll();
 
 		echo json_encode($response);
+	}
 
+	public function checkLogin(){
+		$logged = true;
+		$this->index($logged);
 	}
 }
