@@ -37,7 +37,7 @@
                     <h3 class=""><a href="<?= base_url()?>" >LOGOTIPO</a></h3>
                 </div>
                 <div class="col-md-4 pt-2">
-                    <a href="#" class="text-white">Logout</a>
+                    <a href="logout" class="text-white">Logout</a>
                 </div>
             </div><!-- row text right -->
         </div><!-- container -->

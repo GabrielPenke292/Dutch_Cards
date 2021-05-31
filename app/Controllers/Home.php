@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Models\WordsModel;
 class Home extends BaseController
 {
-	public function index($logged = false)
+	public function index()
 	{	
-
-		if($logged){
+		$loggedUserID = session()->get('loggedUser');
+		if($loggedUserID){
 			$wordsModel = new WordsModel();
 
 			$data = [
@@ -57,7 +57,16 @@ class Home extends BaseController
 	}
 
 	public function checkLogin(){
-		$logged = true;
-		$this->index($logged);
+		// Criar verificação de usuário
+		session()->set('loggedUser', 1);
+		return redirect()->to('/');
 	}
+
+	public function logout(){
+	
+		if(session()->has('loggedUser')){
+            session()->remove('loggedUser');
+            return redirect()->to('/')->with('fail', 'You are logged out!');
+        }
+	}	
 }
