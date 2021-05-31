@@ -69,4 +69,13 @@ class Home extends BaseController
             return redirect()->to('/')->with('fail', 'You are logged out!');
         }
 	}	
+
+	public function register(){
+		$data = ['title' => 'Dutch Cards - Memorize Dutch Words!'];
+		return view("authentication/register", $data);
+	}
+
+	public function registerNewUser(){
+
+	}
 }

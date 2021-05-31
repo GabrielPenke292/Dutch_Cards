@@ -37,6 +37,7 @@ $routes->get('getAllWords', 	"Home::getAllWords");	// Pega todas as palavras cad
 $routes->get('addcards', 		"Home::addCards");  // Retorna a view para cadastrar novas palavras no banco
 $routes->post('saveNewCard', 	"Home::saveNewCard");  // Salva o novo card no banco 
 $routes->get('logout', 			"Home::logout"); // Realiza o logout da sessão
+$routes->get('auth/register', 	"Home::register"); // Leva para a view de registro de usuário
 
 $routes->get("check", "Home::checkLogin");
 
