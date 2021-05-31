@@ -37,9 +37,11 @@ function storeWords(type){
         $("#last_dutch").html($("#dutchWord").html());
         $("#last_english").html($("#englishWord").html());
     }else if(type == 'getLastWord'){
-        console.log("I was here")
-        $("#dutchWord").html($("#last_dutch").html());
-        $("#englishWord").html($("#last_english").html());
+        if($("#last_dutch").html() != ''){
+            $("#dutchWord").html($("#last_dutch").html());
+            $("#englishWord").html($("#last_english").html());
+        }
+        
     }
 }
 
